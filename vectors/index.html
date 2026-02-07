@@ -11,18 +11,18 @@ body{
 background-color:rgb(0, 0, 0);
 display:block;
 margin:0;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: larger;
 }
 
 .contentframe{
 padding: 60px;
-padding-bottom:0px;
+padding-bottom:25px;
 background-color: #00000000;
 padding-top: 0px;
 display: flex;
 flex-wrap: wrap;
-flex-direction: column;
+flex-direction: row;
 left:0;
 right:0;
 pointer-events: none;
@@ -35,7 +35,7 @@ height: auto;
 width: auto;
 min-width:304px;
 max-width:788px;
-
+pointer-events: all;
 }
 
 
@@ -50,35 +50,44 @@ margin-top:10px;
 
 container{
 padding: 25px;
-padding-top:15px;
 background-color: white;
-display:flex;
+display: flex;
 position: relative;
 flex-wrap: wrap;
 flex-direction: row;
 justify-content: center;
 height: auto;
 width: auto;
+
 margin: auto;
 border-radius: 20px;
-
 }
 
-.contentcard{
+.hometop{
 
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-gap: 10px;
-max-width:724px;
-width:auto;
+    width: 330px;
+   
+    height:auto;
+    min-height:375px;
+    margin:auto;
+    margin-top:20px;
+   
+}
+.homebottom{
+    width:330px;
+    height:130px;
+    min-height:130px;
+    margin:auto;
+    margin-top:15px;
+  
+}
+@media screen and (max-width:680px) {
+.homebottom{
 height:auto;
-margin:auto;
-margin-top:20px;
-pointer-events: all;
+  
+    
 }
-
-
+}
 #navcontainer{
 width:auto;
 min-width:304px;
@@ -132,8 +141,8 @@ height: auto;
 width:98%;
 pointer-events: none;
 
-}
 
+}
 @media screen and (max-width:1100px) {
 #navframe{
 
@@ -141,7 +150,6 @@ width:100%;
   
 }
 }
-
 #page{
 margin: 13px;
 
@@ -209,7 +217,7 @@ position:relative;
 padding-top:25px;
 padding-bottom:30px;
 display: flex;
-margin-top: 20px;
+margin-top: 25px;;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: auto;
@@ -219,7 +227,7 @@ bottom:0;
 height:10px;
 width: auto;
 min-width:370px;
-max-width:777px;
+max-width:788px;
 font-size:medium;
 justify-content: space-between;
 z-index:2;
@@ -237,7 +245,7 @@ margin-right: auto;
 left: 0;
 right: 0;
 top:0;
-z-index:9;
+z-index:8;
 
 }
 @media screen and (max-width:390px) and (min-width: 0px) {
@@ -259,6 +267,10 @@ margin-top:20px;
 width:270px;
 
 }}
+/*@media screen and (max-width:1180px) and (min-width: 0px) {
+.navframe{
+}
+}*/
 
 
 
@@ -291,96 +303,68 @@ width:95%;
   
 }
 }
-
-.gallerypiccontainer {
-height: 140px;
-max-width: 180px;
-width: auto;
-background-color: #555;
-border-radius: 20px;
-margin: auto;
-
+.ovalpicture {
+  height: 240px;
+  width: 190px;
+  background-color: #555;
+  border-radius: 50%;
+  margin: auto;
 
 }
 
-.gallery{
+.smbuttons{
+    height:50px;
+    width:50px;
+    background-color: rgb(100, 81, 81);
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0;
+    border-radius: 30px;
+}
+
+
+.smgrid{
+    background-color: rgba(255, 255, 255, 0);
     flex-direction:row;
-    flex:30%;
-    text-indent: 35px;
-  
- 
-}
-@media screen and (max-width:920px) {
-.gallery{
-flex:100%;
-}
-}
-
-#headerfare{
-background-image:url(images/fareheader.jpg);
-border-end-end-radius: 20px;
-border-end-start-radius: 20px;
-border-start-end-radius: 20px;
-border-start-start-radius: 20px;
-width:auto;
-padding:25px;
-
-max-height:330px;
-height:auto;
-background-position:center;
-background-size:cover;
-text-align:center;
-margin: auto;
-left:0;
-right:0;
-margin-top:10px;
-display: block;
+    font-size: 0.9rem;
+    padding:0;
+    
 
 }
 
 
-.piccontainer {
-height: auto;
-background-color: rgb(165, 255, 218);
-width:100%;
-
-border-radius: 20px;
-margin: auto;
-justify-self: center;
-display: block;
+.smgridcontent{
+    background-color: rgba(0, 0, 0, 0);
+    
+    text-align: center;
+    align-content: center;
+    width:110px;
+    height:130px;
+    line-height: 1;
+    margin-left: auto;
+    margin-right:auto;
+    cursor:pointer;
 }
-
-.picture{
-flex:30%;
-
-
+@media screen and (max-width:680px) {
+.smgridcontent{
+flex-direction:row;
+    width:100px;
+    height:90px;
+  flex:100%;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
-@media screen and (max-width:920px) {
-.picture{
-flex:90%;
-  
-}
-}
-@media screen and (max-width:920px){
-.caption{
-align-self: center;
-justify-self: center;
-display: block;
-}
-
-}
-
-.caption{
-    font-size:16px;
-   
 }
 </style>
 </head>
 <body>
    <script>
 
-   </script>
 
+
+
+   </script>
 
 <svg id="navframe" class="navframe" width="1443" height="387" viewBox="0 0 1443 387" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1168.62 65.1997C1156.61 73.9504 1164.94 86.0295 1172.79 81.0636L1177.35 79.1831C1184.74 76.8209 1185.66 99.9555 1165.48 99.8956C1145.29 99.8356 1144.62 85.5488 1146.55 74.6132C1148.48 63.6775 1158.36 43.0267 1189.67 46.5186C1215.55 49.4047 1229.05 73.3104 1230.39 85.1598C1231.73 97.0092 1231.58 110.132 1214.86 127.345C1202.89 139.67 1161.12 151.906 1137.82 151.837C1114.51 151.768 1096.81 151.657 1075.1 143.934C1044.44 133.027 996.887 99.0699 996.887 99.0699C996.887 99.0699 940.804 60.1612 913.019 39.3609C885.233 18.5606 846.697 -0.0454786 803.742 2.51925C769.858 4.54236 721.608 25.9396 721.608 25.9396C721.608 25.9396 766.422 7.82955 799.491 8.63354C812.842 8.95815 857.507 8.63354 897.521 37.0263C937.534 65.4191 1024.06 137.885 1076.71 156.582C1115.15 170.23 1153.78 169.163 1185.34 160.218C1187.6 159.576 1189.83 158.895 1192.02 158.176C1201.12 155.18 1209.55 151.527 1217.11 147.398C1251.83 128.436 1256.8 71.8361 1242.25 52.5684C1227.7 33.3007 1206.65 28.3771 1197.58 28.0731C1193.34 27.6006 1185.46 27.6543 1176.38 29.1942C1157.21 32.4455 1132.7 42.3227 1125.82 67.8613C1122.94 78.5681 1123.67 87.1121 1127.34 94.882C1128.77 97.912 1130.65 100.824 1132.94 103.701C1141.09 113.955 1157.75 115.447 1162.72 115.518C1191.65 115.932 1213.4 93.558 1206.94 73.722C1203.73 63.8504 1194.3 61.6915 1189.74 61.1833C1189.74 61.1833 1178.22 58.1992 1168.62 65.1997Z" fill="#ffffff"/>
@@ -497,402 +481,64 @@ display: block;
 
 </header>
 
+    <div class="contentframe">
 
 
-<div class="contentframe">
 
-    <container  class="contentcard">
-  
-   <div id="headerfare">
-     <h1 style="text-align:center; width:auto;margin-top: 10px;">FARE</h1>
-  <p style="margin-top:-10px;text-align: center;width:90%;margin: auto;">FARE helps groups of people quickly decide where to eat in agreement, by swiping with friends to eventually match on a restaurant.</p>
-    <p style="margin-top:15px;">Jan - Apr 2022</p>
-    <button>Prototype</button>
-    
- 
-
-   </div>
-            
-    
-
-
+    <container class="hometop">
+    <div class="ovalpicture"></div>
+    <h1 style="text-align:center">Designer. Artist.</h1>
+    <p style="text-align:center;margin-top: -20px;">Traditional & Digital Art</p>
     </container>
 
-  
-
-   
-</div>
-
-
-<div class="contentframe">
-
-    <container class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Overview</h1>
- 
-   
-       
-
-        <section style="flex:60%; ">
-         
-            <p>
-For the 2022 senior capstone project, my project team and I designed an IOS-based prototype that helps people quickly decide where to eat in agreement. These decisions are made by swiping with another user to eventually match on a restaurant. 
-<br><br>
-Users who prefer to dine alone can view recommendations on the discover page. Recommendations are personalized by using filters, current favorite restaurants, and restaurant preferences.            
-            <br><br>
-
-            </p>
-        </section> 
-        
-        <section class="picture">
-           <img style="max-width:170px; width:60%;" src="images/faremobile.png" class="piccontainer"/>
-            <p style="text-align:center; width:100%;" class="caption">Click to view research report.</p>
-        </section>
-  <section style="flex:100%; ">
-This project was in progress from January to April 2022. The design team members consists of Alex Manuel (Lead UX Designer),  Diya Singh,  Sabina Siddiqui, and Conor Blankenship (UX Designers).  Together, we collaborated in implementing Goal-Directed Design (GDD) to create FARE.
-    <br><br>    
-It is important to note that this is strictly an academic project. Due to COVID-19 restrictions, we’ve collaborated virtually via Discord, Miro, and Figma.
-
-‍        </p>        
-        </section> 
-        
-  
-
- <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Introduction</h3>
-        <section style="flex:100%; ">
-        <p>Something we’ve all most likely experienced is disagreements, specifically when it comes to finding a place to eat with a party or a partner. Here’s a common scenario: Person A has an idea of the kind of food they want to eat but does not know what specific restaurant to eat at with their partner, Person B. Person B keeps suggesting places, but none of the suggestions sound good to A. They spend over 20 minutes discussing and are still not being able to decide where to eat, which only increases their frustration.
-            <br><br>
-            Fare attempts to solve situations like this so that couples or groups of friends can fairly make the decision. This app also caters to those who prefer to dine alone, but still want to find places to eat based on their preferences.
-<br>
-<h4><p>FARE helps..</p></h4>
-<ul>
-    <li>Decrease indecisiveness within groups that need to decide where to eat.</li>
-    <li>Users get opportunities to explore new restaurants.</li>
-    <li>People take less time to decide where to eat.</li>
-</ul>
-
-
-        </p>
-        </section> 
-
-   <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Goal-Directed Design</h3>
-        <section style="flex:100%; ">
-        <p>Goal-directed design is important for the design process as it helps us understand users’ goals, needs, and motivations to produce an effective human-centered design.
-            <br>
-            Goal-Directed design has six stages: <b>Research, Modeling, Requirements, Frameworks, Product Refinement, and Support.</b> </p>
-           
-        </section> 
-  <section class="picture">
-   <img src="images/gdd.png" class="piccontainer">
-            <p  class="caption">From <i>About Face: The Essentials of Interaction Design by Alan Cooper.</i></p>
-        </section>
-
+    <container class="hometop">
+    <h1>Welcome to my canvas.</h1>
+    <p style="font-size:larger;">The fox jumped over the moon and then he was like woah that was a nice ride over the moon. The end!</p>
     </container>
 
+
+    <container class="homebottom">
+
+    <container class="smgrid">
+<div class="smgridcontent">
+        <div class="smbuttons"></div>
   
+        <h4>LinkedIn</h4>
+        <p style="line-height: 0;">alexmanuel-am</p>
+</div>
 
+<div class="smgridcontent">
+ <div class="smbuttons"> </div>
+  
+        <h4>Bluesky</h4>
+        <p style="line-height: 0;">@milkywaybean</p>
+</div>
+
+<div onclick="location.href='C:\Users\amanu\OneDrive\Documents\portfolio\portfolio.html'" class="smgridcontent">
+        <div class="smbuttons"></div>
+  
+        <h4>Instagram</h4>
+       <p style="line-height: 0;">@milkywaybean</p>
+</div>
+
+
+
+    </container>    
    
-</div>
 
-
-
-<div class="contentframe">
-<container id="research" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Research</h1>
- 
-   
-       
-
-        <section style="flex:100%; ">
-         
-            <p>
-            Research is the first step that helps us better understand information regarding the realm of the app, such as the user’s goals, the environments it will be used in, and past applications that function similarly. In the research phase, we held kick-off meetings, brainstormed ideas, completed a literature review, and conducted user interviews.
-            </p>
-        </section> 
-        <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Kickoff Meeting</h3>
-        <section style="flex:100%; ">
-        <p>The main purpose of conducting a Kickoff Meeting is to gain insight into the base elements for a product and how stakeholders think about their product, their users, and possible design problems.
-        <br><br>
-        Our meetings were held remotely via Discord and Miro. Since we had no idea how this idea would come to fruition, we first began brainstorming ideas on sticky notes. We also listed user goals, talked about the problems our product would solve, and discussed how the product should look and behave.
-        </p>
-        </section> 
-
-        <section class="picture" >
-            <img src="images/kickoffmeetingfare.jpeg" style="max-width: 600px" class="piccontainer">
-            <p style="text-align:center; width:100%;" class="caption">Click to view research report.</p>
-        </section> 
-
-        <section style="flex:100%; ">
-         
-            <p>
-            With the aid of a Kickoff meeting worksheet, we brainstormed some assumptions about who our users will be and the problems they may face regarding social media usage and creativity alike. Since we have no actual stakeholders, the worksheet helped us to think about the possible business goals and opportunities stakeholders would seek. We concluded the last meeting with a problem statement, a research question, and user goals.
-‍            </p>
-        </section> 
-
-     <section style="flex:100%; ">
-         
-            <p>
-            <h4>Problem Statement</h4>
-            "People often have difficulty deciding where they should eat, especially in groups. This indecisiveness usually snowballs into confusion and wasted time. Currently, there are no well-known apps that people can use to decide where to eat. Our app could help users quickly and fairly make the decision while generating more business for restaurant chains."‍           
-            </p>
-        </section> 
-
-
-     <section style="flex:100%; ">
-         
-            <p>
-            <h4>Research Question</h4>
-            <i>What kinds of methods do social groups commonly use to agree on a decision?</i>
-            </p>
-        </section> 
-        
-  <section style="flex:100%;">
-         
-            <p>
-            <h4>User Goals</h4>
-            <ul>
-                <li>Quickly find places to eat.</li>
-                <li>Come to a decision with a group.</li>
-                <li>Discover restaurants that they would like.</li>
-            </ul>
-            </p>
-        </section>
-
-
-
-<h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Competitive Audit</h3>
-        <section style="flex:100%;">
-        <p>
-            We decided that our competitors were:
-
-            <br>
-            
-            <ul>
-                    <li><b>Yelp</b> - A well-known restaurant locater and reviewer, the app has issues like false information, a shifting algorithm, and difficulty reading reviews. </li> 
-                    <li><b>OpenTable</b> - Specializing in dining reservations, the app utilizes filters, menus, and more to find and decide where to eat. Drawbacks include the layout and the rewards. </li> 
-                    <li><b>DiningDecider</b> - A simplistic restaurant swipe app, the map is prominent and has a few basic filters like price and location. The app can only view your given location. </li> 
-                    <li><b>Tinder</b> - Selected for its use of swiping, people like the simplicity and ease of use. Issues include its monetization model and account wiping. </li> 
-            </ul>
-            
-            
-            <br>
-            
-            For each competitor, we looked at both positive and negative reviews from real users. We also found strengths, weaknesses, and opportunities within each competitor. This allowed us to get an idea about the current state of capabilities and constraints in regard to our domain.
-       </p>
-        </section> 
-
-
-
-
-  <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">User Interviews</h3>
- 
-         <section style="flex:60%;">
-            
-            <p>
-As part of the research, we reached out to four potential users of our app and interviewed them by asking questions based on their personal experiences with deciding where to eat with a partner or a group of friends. We asked questions related to what features they would like to see if they were to use this app and whether they see themselves using the Fare app frequently. 
-            <br><br>
-Five interviewees participated; Neva, Nikki, Adam, Sophie, and Mesha. Most were ages 19-25 years-old. These people have all experienced some form of disagreement when it comes to finding a place to eat.
-            </p>
-        </section>
-
-        <section style="align-self: center;" class="picture">
-           <img style="max-width:150px; width:80%;" src="images/discordinterview.jpeg" class="piccontainer"/>
-            <p style="text-align: center;" class="caption">Group interview on Discord.</p>
-        </section>
-
-     
-
-   <section style="flex:100%;">
-            
-            <p>
-After each interview, our team that was available for the interview regrouped and discussed the results. We then created an <b>affinity map</b> to organize our data.
-            </p>
-        </section>
-
-
-     <section style="align-self: center;" class="picture">
-           <img style="max-width:700px; width:100%;" src="images/affinitymap2.jpeg" class="piccontainer"/>
-            <p style="text-align: center;" class="caption">Team's affinity mapping, Miro.</p>
-        </section>
-
-
-   <section style="flex:100%;">
-    <p>What stood out the most to us among all of our participants:</p>
-        <ul>
-           <li>Has the desire to have freedom in how they want to express themselves creatively. </li>
-           <li>All of the participants made separate creative accounts that do not connect to their personal accounts so that they could freely share their work.</li>
-           <li>All used their creative accounts to connect with other creative people in the same field.</li>
-           <li>The majority of our participants also used their passion to venture into the business world. They used their passion to make money and gained clients and following for that through their social media. </li>
-            <li>All of the participants want user interfaces that are visually centered in order to properly display their work. </li>
-        </ul>
-    <p>Overall, the affinity mapping set us up for our transition into the modeling phase to build our primary persona.</p>
-       </section>
-
-</container>
-</div>
-
-
-
-<div class="contentframe">
-<container id="modeling" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Modeling The Persona</h1>
- <p>
-Personas should help us make sure that we’re accommodating our users’ goals and needs during the Frameworks Phase. ‍Based on research results and affinity mapping, we were able to create a primary and secondary persona.
- </p>
-   <section class="picture">
-            <img style="max-width:600px;" src="images/kevin.png" class="piccontainer">
-
-<p> <b>Primary Persona</b> 
-    <br><br>
-    Kevin Bell Kevin Bell is a 42-year-old married man from Jacksonville, Florida. He has been working as a pilot with Frontier Airlines for 7+ years. He's also a travel enthusiast outside of work. Whenever he's on vacation, Kevin is most likely traveling somewhere with his wife. Together, they love to explore unfamiliar foods and restaurants in new areas Sometimes they have trouble agreeing on where to eat, especially at family gatherings. Kevin usually solves these disagreements by giving into his wife's choice.</p>
-
-      </section> 
-
-   <section  class="picture">
-            <img style="max-width:600px;" src="images/sarah.png" class="piccontainer">
-           
-<p> <b>Secondary Persona</b> 
-    <br><br>
-   Sarah Paige Sarah Paige is a 23-year-old business student and she recently transferred to San Antonio, Texas for school. Although she’s new to the area, she has already found her own friend group. They hang out at cafes and restaurants every other weekend and Sarah always lets them pick where to eat. Sarah loves to hike as a hobby and she usually likes to find a place to eat after her hikes. With Sarah being new to the area and quite indecisive, she often spends over 20 minutes to find somewhere to eat.</p>
-</section>
-
-
-</container>
-</div>
-
-
-<div class="contentframe">
-<container id="modeling" class="contentcard">
-    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Requirements</h1>
-    <p>
-A Requirement is what's needed to exist on the app so that personas can achieve their goals. It connects the gap between research and design by using personas to create stories that express user satisfaction. We do this by putting the Persona into a Context Scenario, which is essentially a story that explains how a product fits into the Persona’s life and how it helps them achieve their goals.
-    <br><br>
-Using the Context Scenario (written by Sabina), we made a list of Requirements that FARE needed to allow users to successfully meet their goals. 
-    </p>
-
-    <section class="picture">
-    
-    <p> <b>Context Scenario</b></p>   
-    <img style="max-width:600px;" src="images/contextscenario.jpeg" class="piccontainer">
-
-    </section> 
-
-   <section  class="picture">
-    <p><b>Requirements</b></p>        
-    <img style="max-width:600px;" src="images/requirements2.jpeg" class="piccontainer">
-
-    
-    </section>
-
-
-</container>
-</div>
-
-
-<div class="contentframe">
-<container id="modeling" class="contentcard">
-    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Framework</h1>
-    <p>
-A Requirement is what's needed to exist on the app so that personas can achieve their goals. It connects the gap between research and design by using personas to create stories that express user satisfaction. We do this by putting the Persona into a Context Scenario, which is essentially a story that explains how a product fits into the Persona’s life and how it helps them achieve their goals.
-    <br><br>
-Using the Context Scenario (written by Sabina), we made a list of Requirements that FARE needed to allow users to successfully meet their goals. 
-    </p>
-
-    <section class="picture">
-    <img style="max-width:600px;" src="images/userflow.png" class="piccontainer">
-    <p style="text-align:center; width:100%;" class="caption">Click to expland user flow.</p>
-    </section> 
-
-   <section  class="picture">       
-    <img style="max-width:600px;" src="images/wireframefare.png" class="piccontainer">
-    <p style="text-align:center; width:100%;" class="caption">Click to expland wireframe</p>
-    
-    </section>
-
-
-   <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Low-Fidelity Prototype</h3>
-    <p>
-        Next, we moved to Figma to begin building the prototype. Since this is a low-fidelity prototype, a lot of content (information, styles, colors, branding) is not included. For example, most screens will have filler text or image placeholders. The low fidelity prototype is still accessible in Figma.
-    </p>
-
-    <section  style="align-self: center; ">
-           <iframe style="border: 0px solid rgba(0, 0, 0, 0);" width="300" height="510" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQ05iqnsvS2esUbnDoDWx9V%2F8Tiv-Social-Media-App%3Fnode-id%3D3%253A5%26starting-point-node-id%3D1%253A2%26scaling%3Dcontain" allowfullscreen></iframe>
-            <p style="text-align:center; width:100%;" class="caption">Click to view research report.</p>
-    </section> 
-
-
-</container>
-</div>
-
-
-
-
-
-<div class="contentframe">
-<container id="requirements" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Refinements</h1>
- 
-   <p>
-        After finishing our low-fidelity prototype, we began usability testing. Using Google Forms, we included a set of 6 tasks for navigating the prototype, and 19 (primarily) open-ended questions. We recruited four participants of the same demographic.
-    </p>
-        
-          <section style="flex:40%;min-width:150px;">
-         
-            <p>
-            <b>Negative Takeaways</b> 
-            </p>
-            <ul>
-                <li>Certain back buttons were non-functional.</li>
-                <li>The home button was initially confusing to a user.</li>
-                <li>One participant disliked that the edit friends option was in the settings section.</li>
-
-            </ul>
-
-        </section> 
-
-
-
-        <section style="flex:40%;min-width:150px;">
-         
-            <p>
-            <b>Positive Takeaways</b> 
-            </p>
-            <ul>
-                <li>They appreciated the simplicity of the app</li>
-                <li>The group/friends feature is highly valued.</li>
-                <li>The level of information on the restaurant tab is a big plus.</li>
-            </ul>
-
-        </section> 
-       
-
-        
-        <section style="flex:100%;">
-             <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">High-Fidelity Prototype</h3>
-        </section> 
-
-        <section  style="align-self: center; ">
-           <iframe style="border: 0px solid rgba(0, 0, 0, 0);" width="300" height="510" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQ05iqnsvS2esUbnDoDWx9V%2F8Tiv-Social-Media-App%3Fnode-id%3D3%253A5%26starting-point-node-id%3D1%253A2%26scaling%3Dcontain" allowfullscreen></iframe>
-            <p style="text-align:center; width:100%;" class="caption">Click to view research report.</p>
-        </section> 
-
-
-        
-    
-</container>
-</div>
-
-
-     
-
-
-
+    </container>
+    <container style="text-align:center" class="homebottom">
+    <p style="font-size:large;font-weight: 700;"><i>Inspirational quote that is like sooo very inspirational and cool and yeah.</i></p>
+    <p style="line-height: 0;">-quote source</p>
+    </container>
+    </div>
 
 <footer id="footer">
-<section style="margin-left:20px"> Alexsandria Manuel 2026</section>
-<section style="margin-right:20px"> Contact Me </section>
+<section style="margin-left:25px"> Alexsandria Manuel 2026</section>
+<section style="margin-right:25px"> Contact Me </section>
 </footer>
 
-<div id="ovalbg" class="ovalbag"></div>
+    <div id="ovalbg" class="ovalbag"></div>
 
 
 
