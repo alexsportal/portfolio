@@ -380,12 +380,28 @@ font-size:16px;
 flex:60%;
 width:auto;
 max-width:600px;
+margin-top: -15px;
 }
 .dates{
-flex:30%;
+flex:10%;
 text-align:right;
-align-self: center;
+
+
 font-size:medium;
+}
+
+.general{
+    color:blue;
+}
+.art{
+    color:red;
+}
+.ui{
+    color:green;
+}
+
+.general, .art, .ui{
+width:30%;
 }
 
 </style>
@@ -520,8 +536,14 @@ font-size:medium;
 <div class="contentframe">
 
 <container class="contentcard">
-<h2 class="blogtitles">Blog post about process</h2>
+
+<section style="flex:100%;">
 <p class="dates">Month, 01, 20XX</p>
+<h1 class="blogtitles">Blog post about process</h1>
+<p class="art"><b>Blog Type</b></p>
+
+</section>
+
  
    
        
@@ -553,9 +575,12 @@ font-size:medium;
 <div class="contentframe">
 
 <container class="contentcard">
-<h2 class="blogtitles">Blog post about process</h2>
+<section style="flex:100%;">
 <p class="dates">Month, 01, 20XX</p>
- 
+<h1 class="blogtitles">Blog post about process</h1>
+<p class="ui"><b>Blog Type</b></p>
+
+</section>
        
         <section style="flex:100%;">
             <p>
@@ -592,8 +617,12 @@ font-size:medium;
 <div class="contentframe">
 
 <container class="contentcard">
-    <h2 class="blogtitles">Blog post about process</h2>
-    <p class="dates">Month, 01, 20XX</p>
+ <section style="flex:100%;">
+<p class="dates">Month, 01, 20XX</p>
+<h1 class="blogtitles">Blog post about process</h1>
+<p class="general"><b>Blog Type</b></p>
+
+</section>
  
    
        
