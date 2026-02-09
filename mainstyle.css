@@ -212,7 +212,7 @@ width:100%;
 #pagesection1, #pagesection2{
 gap:0;
 margin: -5px;
-
+justify-self: center;
 }
 }
 
