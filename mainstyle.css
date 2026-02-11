@@ -241,8 +241,8 @@ font-weight: 600;
 width:80%;
 height:120%;
 display: block;
-border-left: solid #BEB397 38px;
-border-right: solid #BEB397 38px;
+border-left: solid #BEB397 35px;
+border-right: solid #BEB397 35px;
 background-color:rgba(0, 0, 0, 0);
 
 position:fixed;
@@ -263,11 +263,11 @@ transition:1s;
 width:80%;
 height:120%;
 display: block;
-border-right: groove #846c88 35px;
-border-left: ridge #846c88 35px;
+border-right: solid #846c88 30px;
+border-left: solid #846c88 30px;
 
 background: linear-gradient(152.44deg, rgba(73, 69, 102, 0) 11.96%, rgba(206, 202, 238, 0.267) 39.49%, rgba(15, 10, 53, 0) 55.2%, rgba(183, 179, 220, 0.342) 61.68%, rgba(255, 255, 255, 0.118) 70.87%);
-backdrop-filter: blur(2px);
+
 position:fixed;
 top:-50px;
 left:0;
