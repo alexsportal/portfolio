@@ -47,7 +47,12 @@ pointer-events: all;
 transition: 1s;
 }
 
-
+@media screen and (max-width:7880px) {
+.contentcard{
+width:85%;
+  
+}
+}
 
 
 container{
@@ -89,8 +94,7 @@ display:flex;
 
 gap: 10px;
 position:relative;
-padding-left:100px;
-padding-right:100px;
+
 left:0;
 right:0;
 margin-left:auto;
@@ -107,7 +111,7 @@ transition: 1s;
     position:absolute;
     display: block;
     width:40%;
-    min-width:140px;
+    min-width:150px;
     left:0;
     right:0;
     height:150px;
@@ -130,7 +134,15 @@ transition: 1s;
     gap:10px;
     transition:1s;
 }
-
+.openpage{
+    margin-top:25px;
+}
+@media screen and (max-width:650px) {
+.openpage{
+margin-top:auto;
+  
+}
+}
 
 #navframe{ 
 
@@ -151,10 +163,21 @@ transition: 1s;
 
 }
 
+@media screen and (max-width:720px) {
+#navframe{
+top:20px;
 
+}
+}
+@media screen and (max-width:720px) {
+#navbar{
+width:70%;
+
+}
+}
 #footer{
 background-color:#BEB397;
-color:#5F4F63;
+color:#403642;
 position:relative;
 padding-top:25px;
 padding-bottom:30px;
@@ -177,7 +200,7 @@ font-weight: 600;
 
 
 #doubleborder{
-    width:80%;
+width:80%;
 height:120%;
 display: block;
 border-left: solid #BEB397 38px;
@@ -195,7 +218,9 @@ margin-right:auto;
 border-top-left-radius: 600px;
 border-top-right-radius: 600px;
 pointer-events: none;
+transition:1s;
 }
+
 #ovalbg{
 width:80%;
 height:120%;
@@ -216,7 +241,7 @@ margin-right:auto;
 border-top-left-radius: 600px;
 border-top-right-radius: 600px;
 pointer-events: none;
-
+transition:1s;
 
 }
 
@@ -235,6 +260,7 @@ width:100%;
 gap:0;
 margin: -5px;
 justify-self: center;
+margin-left:5px;
 }
 }
 
@@ -257,8 +283,21 @@ margin-top:-20px;
 
 @media screen and (max-width:800px) {
 #banner{
-top:-20px;
-  
+top:-15px;
+
+}
+}
+
+@media screen and (max-width:550px) {
+#banner{
+top:-25px;
+
+}
+}
+@media screen and (max-width:410px) {
+#banner{
+
+left:30px;
 }
 }
 @font-face{
