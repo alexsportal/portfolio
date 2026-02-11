@@ -6,7 +6,8 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: larger;
 background-image: url('images/sparkle_overlay.jpg');
 background-size:contain;
-transition: 1s;
+transition: .5s;
+
 
 }
 
@@ -30,8 +31,7 @@ min-width:304px;
 max-width:788px;
 pointer-events: all;
 
-transition:1s;
-  
+
 }
 .contentcard{
 
@@ -45,7 +45,6 @@ height:auto;
 margin:auto;
 margin-top:20px;
 pointer-events: all;
-transition: 1s;
 
 
 --line-w-inner: 2px /* inner line thickness */;
@@ -97,7 +96,7 @@ width:85%;
 
 container{
 padding: 25px;
-background-color: white;
+background-color:#efebf0;
 display: flex;
 position: relative;
 flex-wrap: wrap;
@@ -105,7 +104,6 @@ flex-direction: row;
 justify-content: center;
 height: auto;
 width: auto;
-
 margin: auto;
 border-radius: 10px;
 }
