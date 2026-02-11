@@ -24,12 +24,13 @@ pointer-events: none;
 margin: auto;
 content-visibility: auto;
 position: relative;
-height: auto;
+
 width: auto;
 min-width:304px;
 max-width:788px;
 pointer-events: all;
-margin-top:-20px;
+
+transition:1s;
   
 }
 .contentcard{
@@ -321,7 +322,7 @@ margin-top:-20px;
 }}
 
 @media screen and (max-width:800px) {
-#banner{
+#banner{ 
 top:-15px;
 
 }
@@ -333,15 +334,28 @@ top:-25px;
 
 }
 }
-@media screen and (max-width:410px) {
-#banner{
+@media screen and (max-width:800px) {
+.contentframe{
 
-left:30px;
+top:-25px;
 }
 }
+@media screen and (max-width:743px) {
+.contentframe{
+
+top:-70px;
+}
+}
+@media screen and (max-width:550px) {
+.contentframe{
+
+top:-140px;
+}
+}
+
 @font-face{
     font-family:header;
-    src:url(fonts/CherrySwash-Bold.ttf);
+    src:url(fonts/Baloo2-ExtraBold.ttf);
 }
 
 h1{
