@@ -56,7 +56,7 @@ pointer-events: all;
       	inset 0 0 0 var(--line-w-inner) #846c88 /* inner border line */
 }
 
-@media screen and (max-width:7880px) {
+@media screen and (max-width:780px) {
 .contentcard{
 width:85%;
   
@@ -66,8 +66,8 @@ width:85%;
 
     width: 320px;
    
-    height:auto;
-    min-height:425px;
+    height:425px;
+    max-height:425px;
     margin:auto;
     margin-top:20px;
     --line-w-inner: 2px /* inner line thickness */;
@@ -92,7 +92,12 @@ width:85%;
 	box-shadow: 0 0 0 var(--line-w-outer)#846c88 /* outer border line */, 
       	inset 0 0 0 var(--line-w-inner) #846c88 /* inner border line */
 }
+  @media screen and (max-width:788px) {
+.homebottom{
+height:100%;
   
+}
+}
 
 container{
 padding: 25px;
@@ -205,6 +210,7 @@ transition: 1s;
 #navframe{
 top:20px;
 
+
 }
 }
 @media screen and (max-width:720px) {
@@ -265,8 +271,9 @@ height:120%;
 display: block;
 border-right: solid #846c88 20px;
 border-left: solid #846c88 20px;
-
-background: linear-gradient(152.44deg, rgba(73, 69, 102, 0) 11.96%, rgba(206, 202, 238, 0.267) 39.49%, rgba(15, 10, 53, 0) 55.2%, rgba(183, 179, 220, 0.342) 61.68%, rgba(255, 255, 255, 0.118) 70.87%);
+border-image: url("vectors/mirrorborder.svg") 30 /
+  30px;
+background: linear-gradient(152.44deg, rgba(73, 69, 102, 0.071) 11.96%, rgba(206, 202, 238, 0.279) 39.49%, rgba(15, 10, 53, 0) 55.2%, rgba(183, 179, 220, 0.405) 61.68%, rgba(255, 255, 255, 0.118) 70.87%);
 
 position:fixed;
 top:-50px;
@@ -276,17 +283,16 @@ bottom:0;
 z-index:-1;
 margin-left:auto;
 margin-right:auto;
-border-top-left-radius: 600px;
-border-top-right-radius: 600px;
+
 pointer-events: none;
 transition:1s;
 
 }
 
 @media screen and (max-width:1100px) {
-#ovalbg,#doubleborder{
+#ovalbg{
 box-sizing: border-box;
-width:100%;
+width:83%;
   
 }
 }
@@ -356,7 +362,18 @@ top:-140px;
     src:url(fonts/Baloo2-ExtraBold.ttf);
 }
 
-h1{
+h1,h2,h3{
     font-family: header;
     color:#514059;
+}
+.links{
+    color:#373737;
+    font-family: header;
+}
+.imagedesc{
+ margin:auto;
+    margin-top:10px;
+    margin-bottom:20px;
+    width:80%;
+    text-align:center;
 }
