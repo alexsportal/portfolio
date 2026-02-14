@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -25,24 +25,24 @@ height: 190px;
 max-width: 270px;
 width: auto;
 background-color: #555;
-border-radius: 20px;
+border-radius: 10px;
 margin: auto;
 background-size: cover;
-
+border:solid 3px #e9ddeb;
 }
+
 .aboutmepiccontainer {
 height: 330px;
 width: auto;
 background-color: #555;
-border-radius: 20px;
+border-radius: 10px;
 margin-left: 15px;
 margin-right:20px;
-border: double #f0ecf0 6px;
-
+border:solid 3px #e9ddeb;
 background-image: url(images/itsme.jpg);
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
-background-position: center;;
+background-position: center;
 
 }
 
@@ -99,6 +99,10 @@ width:50px;
 height:50px;
 background-color: rgb(173, 173, 173);
 border-radius: 100%;
+}
+
+#aboutme{
+    pointer-events: none;
 }
 
 </style>
@@ -326,7 +330,7 @@ border-radius: 100%;
         <div id="pagesection1">
         <a href="aboutme.html"><div id="page" class="openpage">
 
-        <svg  width="146" height="274" viewBox="0 0 146 274" fill="none" class="navbutton" xmlns="http://www.w3.org/2000/svg">
+        <svg  width="146" height="274" viewBox="0 0 146 274" fill="none" id="aboutme" class="navbutton" xmlns="http://www.w3.org/2000/svg">
    <path d="M101.814 261.56C96.6165 261.267 84.5369 262.221 82.6406 263.322C77.7062 265.04 73.0006 269.701 73 272.298C72.9998 273.028 73.3711 273.595 74.213 273.889C76.1092 274.549 78.2648 271.362 80.9551 269.926C97.0582 261.332 114.508 266.804 123.725 260.019C129.622 255.68 134.991 243.971 142.266 249.673C142.949 250.208 142.911 250.966 142.688 251.434C142.477 251.874 141.833 252.224 141.213 252.094C140.159 251.874 140.541 249.978 140.159 250.113C139.527 251.214 139.612 251.954 139.738 252.314C140.581 254.736 144.584 254.075 145.598 252.314C146.966 249.939 144.611 247.831 142.016 247.251C137.926 246.336 134.99 247.847 132.591 249.867C130.66 251.493 129.076 253.449 127.518 254.736C119.391 261.445 107.011 261.854 101.814 261.56Z" fill="#D7CDB7"/>
 <path d="M63.3594 263.322C61.4631 262.221 49.3835 261.267 44.1865 261.56C38.9894 261.854 26.6086 261.445 18.4822 254.736C16.9235 253.449 15.3399 251.493 13.4091 249.867C11.0097 247.847 8.07409 246.336 3.98364 247.251C1.38899 247.831 -0.966038 249.939 0.402008 252.314C1.41621 254.075 5.41933 254.736 6.26209 252.314C6.38764 251.954 6.47278 251.214 5.84071 250.113C5.45851 249.978 5.84071 251.874 4.78725 252.094C4.16746 252.224 3.52311 251.874 3.31242 251.434C3.08858 250.966 3.05088 250.208 3.7338 249.673C11.0092 243.971 16.378 255.68 22.2746 260.019C31.4924 266.804 48.9418 261.332 65.0449 269.926C67.7352 271.362 69.8908 274.549 71.787 273.889C72.6289 273.595 73.0002 273.028 73 272.298C72.9994 269.701 68.2938 265.04 63.3594 263.322Z" fill="#D7CDB7"/>
 <path d="M82.6406 214.634C84.5369 215.734 96.6165 216.688 101.814 216.395C107.011 216.101 119.391 216.51 127.518 223.219C128.766 224.25 130.031 225.71 131.477 227.085C134.079 229.562 137.271 231.766 142.016 230.704C144.611 230.124 146.966 228.016 145.598 225.641C144.584 223.88 140.581 223.219 139.738 225.641C139.612 226.001 139.527 226.741 140.159 227.842C140.541 227.977 140.159 226.081 141.213 225.861C141.833 225.731 142.477 226.081 142.688 226.521C142.911 226.989 142.949 227.747 142.266 228.282C134.991 233.984 129.622 222.275 123.725 217.936C114.508 211.152 97.0582 216.623 80.9551 208.029C78.2648 206.593 76.1092 203.406 74.213 204.066C73.3711 204.36 72.9998 204.927 73 205.657C73.0006 208.254 77.7062 212.915 82.6406 214.634Z" fill="#D7CDB7"/>
@@ -415,7 +419,7 @@ border-radius: 100%;
         <section style="flex:60%;margin-top:-10px;">
         
             <p>
-            I'm Alexsandria ( or Alex) Manuel, a 25 year old alumna of Kennesaw State University. My main objective is to step into the field as a User Experience designer.
+            Hey there! I'm <b>Alexsandria Manuel</b> (or just Alex), a 25 year old alumna of Kennesaw State University. My main objective is to step into the field as a User Experience designer.
             <br><br>
             I believe that meaningful user experiences can happen when designers prioritize understanding and <i>empathizing</i> with their user base.
             <br><br>
@@ -533,7 +537,7 @@ Microsoft Word • Google Docs <br>
         <section class="gallery">
             <div>
             <div class="gallerypiccontainer" style="background-image:url('images/graduated.JPEG')"></div>
-            <p class="imagedesc">I graduated college in 2022 at Kennesaw State University with a Bachelor's degree. I majored in Interactive Design and my minor was Technical Communication.<br><br></p>
+            <p class="imagedesc">I graduated college in 2022 at Kennesaw State University with a Bachelor's degree. I majored in Interactive Design and my minor was Technical Communication.</p>
             </div>
 
              <div>
@@ -587,7 +591,7 @@ Microsoft Word • Google Docs <br>
             <br>
             <div class="listitem">
             <div class="icon"></div>
-            <p style="width:60%;min-width:200px;margin-left: auto;margin-right: auto;">Learn more about mobile game development so that I can turn my prototype, <u style="color: transparent; text-shadow: 0 0 9px #000;user-select: none;">secret!</u> , into a fully functional app.</p>
+            <p style="width:60%;min-width:200px;margin-left: auto;margin-right: auto;">Learn more about mobile game development so that I can turn my prototype, <u style="color: transparent; text-shadow: 0 0 9px #000;user-select: none;">secret!</u> , into a functional app.</p>
             </div>
 
 
