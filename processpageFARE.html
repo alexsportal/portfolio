@@ -66,7 +66,12 @@ flex:90%;
   
 }
 }
-
+@media screen and (max-width:600px) {
+.picture{
+pointer-events:none;
+  
+}
+}
 
 
 #headerfare{
@@ -104,6 +109,14 @@ display: block;
         }
 
     </script>
+
+
+<div id="expandPic">
+
+<img id="angelpic" src="images/angel2.JPEG" class="expandedimage" />
+<p id="angelcaption" class="expandedcaption">caption</p>
+<p class="expandedcaption" style="font-size:smaller;">Click anywhere to close.</p>
+</div>
 
 <div id="contactmeoverlay">
 
@@ -473,7 +486,7 @@ Users who prefer to dine alone can view recommendations on the discover page. Re
            
         </section> 
   <section class="picture">
-   <img src="images/gdd.png" class="piccontainer">
+   <img style="pointer-events: none;" src="images/gdd.png" class="piccontainer">
             <p  class="caption">From <i>About Face: The Essentials of Interaction Design by Alan Cooper.</i></p>
         </section>
 
@@ -508,7 +521,7 @@ Users who prefer to dine alone can view recommendations on the discover page. Re
         </section> 
 
         <section class="picture" >
-            <img src="images/kickoffmeetingfare.jpeg" style="max-width: 600px" class="piccontainer">
+            <img id="brainstorm1" alt="Brainstorming sticky notes on Miro." src="images/kickoffmeetingfare.jpeg" style="max-width: 600px" class="piccontainer">
             <p style="text-align:center; width:100%;" class="caption">Brainstorming sticky notes on Miro</p>
         </section> 
 
@@ -586,7 +599,7 @@ Five interviewees participated; Neva, Nikki, Adam, Sophie, and Mesha. Most were 
         </section>
 
         <section style="align-self: center;" class="picture">
-           <img style="max-width:150px; width:80%;" src="images/discordinterview.jpeg" class="piccontainer"/>
+           <img style="max-width:150px; width:80%;pointer-events:none;" src="images/discordinterview.jpeg" class="piccontainer"/>
             <p style="text-align: center;" class="caption">Group interview on Discord with Neva, Alex, Sabina, and Connor.</p>
         </section>
 
@@ -601,7 +614,7 @@ After each interview, our team that was available for the interview regrouped an
 
 
      <section style="align-self: center;" class="picture">
-           <img style="max-width:700px; width:100%;" src="images/affinitymap2.jpeg" class="piccontainer"/>
+           <img  id="affinitymap" alt="Affinity mapping data from interviews on Miro." style="max-width:700px; width:100%;" src="images/affinitymap2.jpeg" class="piccontainer"/>
             <p style="text-align: center;" class="caption">Affinity mapping data from interviews on Miro.</p>
         </section>
 
@@ -630,7 +643,7 @@ After each interview, our team that was available for the interview regrouped an
 Personas should help us make sure that we’re accommodating our users’ goals and needs during the Frameworks Phase. ‍Based on research results and affinity mapping, we were able to create a primary and secondary persona.
  </p>
    <section class="picture">
-            <img style="max-width:600px;" src="images/kevin.png" class="piccontainer">
+            <img id="kevin" alt="Kevin Bell persona." style="max-width:600px;" src="images/kevin.png" class="piccontainer">
 
 <p> <b>Primary Persona</b> 
     <br><br>
@@ -639,7 +652,7 @@ Personas should help us make sure that we’re accommodating our users’ goals 
       </section> 
 
    <section  class="picture">
-            <img style="max-width:600px;" src="images/sarah.png" class="piccontainer">
+            <img id="sarah" alt="Sarah Paige persona." style="max-width:600px;" src="images/sarah.png" class="piccontainer">
            
 <p> <b>Secondary Persona</b> 
     <br><br>
@@ -689,12 +702,12 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
     </p>
 
     <section class="picture">
-    <img style="max-width:600px;" src="images/userflow.png" class="piccontainer">
+    <img  id="userflowpic" alt="User flow for restaurant app." style="max-width:600px;" src="images/userflow.png" class="piccontainer">
     <p style="text-align:center; width:100%;" class="caption">User flow for restaurant app.</p>
     </section> 
 
    <section  class="picture">       
-    <img style="max-width:600px;" src="images/wireframefare.png" class="piccontainer">
+    <img id="wireframepic" alt="Wireframe for restaurant app." style="max-width:600px;" src="images/wireframefare.png" class="piccontainer">
     <p style="text-align:center; width:100%;" class="caption">Wireframe for restaurant app.</p>
     
     </section>
@@ -787,7 +800,70 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
 <div id="ovalbg"></div>
 
 
+<script>
+// Get the modal
+var modal = document.getElementById("expandPic");
 
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("wireframepic");
+var img1 = document.getElementById("userflowpic");
+var img2 = document.getElementById("brainstorm1");
+var img3 = document.getElementById("affinitymap");
+var img4 = document.getElementById("kevin");
+var img5 = document.getElementById("sarah");
+
+
+
+
+
+
+
+var expandImage = document.getElementById("angelpic");
+var expandcaption = document.getElementById("angelcaption");
+img.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+
+img1.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img3.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img4.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img5.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
 
 </body>
 </html>
