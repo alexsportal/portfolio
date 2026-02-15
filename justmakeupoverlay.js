@@ -1,13 +1,12 @@
 
-function openBox() {
-  document.getElementById("JMoverlay").style.display = "block";
-}
 
 function closeBox() {
   document.getElementById("JMoverlay").style.display = "none";
 }
 
-
+function openBox() {
+  document.getElementById("JMoverlay").style.display = "block";
+}
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -17,8 +16,9 @@ function plusSlides(n) {
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(slideIndex = n); 
 }
+
 
 function showSlides(n) {
   var i;
@@ -33,7 +33,7 @@ function showSlides(n) {
   for (i = 0; i < thumbnail.length; i++) {
       thumbnail[i].className = thumbnail[i].className.replace(" active", "");
   }
- slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";
   thumbnail[slideIndex-1].className += " active";
   overlaycaption.innerHTML = thumbnail[slideIndex-1].alt;
 }
