@@ -171,7 +171,12 @@ display: block;
 
 
 </div>
+<div id="expandPic">
 
+<img id="angelpic" src="images/angel2.JPEG" class="expandedimage" />
+<p id="angelcaption" class="expandedcaption">caption</p>
+<p class="expandedcaption" style="font-size:smaller;">Click anywhere to close.</p>
+</div>
 
 <a href="index.html"><svg id="banner" width="436" height="156" viewBox="0 0 436 156" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_279_160)">
@@ -473,14 +478,13 @@ display: block;
         <section style="flex:60%;margin-top:-10px ">
          
             <p>
-            There are many services on the app store dedicated to tracking the menstrual cycle. There are also a few services dedicated to tracking skincare. However, current products focus too much on external skin stressors, and they fail to address internal skin stressors such as mood or diets. Additionally, they don’t address how the menstrual cycle can affect your skin, such as the fluctuation of hormones that cause irregularities in the skin like acne. There are Skincare apps and apps to track the menstrual cycle, but nothing that brings the two together.             <br><br>
-   
-                <br>
-
+            There are many services on the app store dedicated to tracking the menstrual cycle. There are also a few services dedicated to tracking skincare. However, current products focus too much on external skin stressors, and they fail to address internal skin stressors such as mood or diets. Additionally, they don’t address how the menstrual cycle can affect your skin, such as the fluctuation of hormones that cause irregularities in the skin like acne. There are Skincare apps and apps to track the menstrual cycle, but nothing that brings the two together.             
+            <br><br>
+            
             Our solution to this problem was Iris. Iris is a tracking app that allows users to monitor their skincare and menstrual cycle. With this app, users are able to gain knowledge about the cycle’s effect on their skin in relation to their menstrual cycle phases. 
-                <br><br>
-                <b><i>Mission: Aid users in better understanding their menstrual cycle & the relations it has with their skin.</i></b>
-                <br><br>
+                <br><br><br>
+                <b>Mission:</b>  <i>Aid users in better understanding their menstrual cycle & the relations it has with their skin.</i>
+                <br><br><br>
             My team was able to design this prototype through the means of Lean UX. Typically, traditional UX design is centered around deliverables and usability. In traditional UX, we are asking “what are we making?”, while in Lean UX, we’re asking “are we making the right thing?”. Lean UX differs from traditional UX in that designers are more focused on creating changes that will improve a product. Lean UX is a cycle of:
                 <br>
 
@@ -539,11 +543,14 @@ The goal for week 0 was to create a product problem statement. Stephanie Meneses
 With the aid of a Kickoff meeting worksheet, we brainstormed some assumptions about who our users will be and the problems they may face regarding social media usage and creativity alike. Since we have no actual stakeholders, the worksheet helped us to think about the possible business goals and opportunities stakeholders would seek.</p>
 We concluded the meeting with a problem statement: 
 <br><br>
-<p style="border-left: solid 15px rgb(0, 0, 0);padding-left: 25px; width:88%;"><b><i>"The current state of skincare tracking products has focused primarily on external skin stressors such as sun exposure, environment, stress, etc. What existing products/services fail to address is hormonal factors such as the menstrual cycle and how it affects skincare routines. Our product/service will address this gap by considering factors of external skin stressors as well as the internal factor of the menstrual cycle. Our initial focus will be on creating an app catered to women that wish to monitor and understand their menstrual cycle and the effect of hormonal changes on their skin."</i></b></p>      
+<p class="largecaptionborder">
+"The current state of skincare tracking products has focused primarily on external skin stressors such as sun exposure, environment, stress, etc. What existing products/services fail to address is hormonal factors such as the menstrual cycle and how it affects skincare routines."   
+</p>      
 <br>       
 After creating the problem statement, we had to get all our assumptions about what we were going to do on the table. We filled out the assumptions template on miro and split our assumptions between business and user assumptions. Business assumptions are things that we assume to be true in order to develop a strategy, make decisions, and plan for a product. User assumptions are simply what we assume to be true about the potential users of the product.
 <br><br>
-Next, we filled out the product backlog template. The purpose of this was to identify our hypothesis statements. The table columns are divided into statements such as “we will achieve [blank] if this person can achieve [blank] with this feature”. We came up with 11 hypotheses in the end.            </p>
+Next, we filled out the product backlog template. The purpose of this was to identify our hypothesis statements. The table columns are divided into statements such as “we will achieve [blank] if this person can achieve [blank] with this feature”. We came up with 11 hypotheses in the end.
+</p>
 
 </section> 
 
@@ -553,37 +560,36 @@ Next, we filled out the product backlog template. The purpose of this was to ide
 
 
   <section style="flex:100%" class="picture" >
-            <img style="max-width:600px;" src="images/productbacklog1.png" class="piccontainer">
-           <p style="text-align:center; width:100%;" class="caption">First product backlog.</p>
-            <p>
-                <br>
+        <img id="backlog1" alt="First product backlog." style="max-width:600px;" src="images/productbacklog1.png" class="piccontainer">
+        <p style="text-align:center; width:100%;" class="caption">First product backlog.</p>
+        <p>
+            <br>
                 After the backlog, we started our proto-personas. The purpose of this was to figure out who the personas were going to be for our service. They are called proto-personas because these are done with less research and because they were to be updated over the course of our Sprints. These are all based on our assumptions as mentioned before. This part was actually done after completing the first column of our Sprint backlog since the next column was dedicated to the proto-personas.
-
             <br><br>
                 Through various interviews, testing, and research, we determined that this product has 3 main types of users. The beginner, the intermediate, and the expert. By creating these personas, we were able to understand who we were creating our product for and we could make sure we were not designed solely based on our assumptions. 
             <br>
                  Our personas are named <b>Claire Mueller</b>, <b>Dorothy Stewart</b>, and <b>Christina Ayer</b>.
-
-            </p>
+         </p>
         </section>
 
 <section  class="picture">
-            <img style="max-width:600px;" src="images/claire.png" class="piccontainer">
+            <img id="claire" alt="Claire Mueller persona." style="max-width:600px;" src="images/claire.png" class="piccontainer">
             <p style="text-align:center; width:100%;" class="caption">Claire Mueller persona.</p>
 <p> <b>Claire</b> would like to track her menstrual cycle to create a personalized skincare routine. To do this she needs an app that allows her to track both her cycle and skincare routine together so she can learn how her skin behaves during each phase of her cycle. Knowing this will help her find better products for her skin type.</p>
 </section>
 
 <section  class="picture">
-            <img style="max-width:600px;" src="images/dorothy.png" class="piccontainer">
+            <img id="dorothy" alt="Dorothy Stewart persona."  style="max-width:600px;" src="images/dorothy.png" class="piccontainer">
             <p style="text-align:center; width:100%;" class="caption">Dorothy Stewart persona.</p>
 <p> <b>Dorothy</b> is now on birth control and would like to track its symptoms. She would like to be more knowledgeable about how it affects her skin as she noticed her skin getting drier during the process. She is also familiar with many ingredients commonly found in skincare products and common side effects and would like to know more about the current products available in the market that best suit her.</p>
 </section>
 
 <section class="picture">
-            <img style="max-width:600px;" src="images/christina.png" class="piccontainer">
+            <img id="christina" alt="Christina Ayer persona." style="max-width:600px;" src="images/christina.png" class="piccontainer">
             <p style="text-align:center; width:100%;" class="caption">Christina Ayer persona.</p>
 <p> <b>Christina</b> is a skincare enthusiast and enjoys bingeing YouTube videos on the latest beauty products. She loves to try new products and change up her routine but needs somewhere to keep track of it and find personalized product recommendations. Knowing her menstrual cycle is important too so she can know what phase her skin is in and test new products in the phase where her hormones and skin are most stable.</p>
 </section>
+
 
   <section style="flex:100%;margin-top:-10px ">
          
@@ -601,8 +607,8 @@ Next, we filled out the product backlog template. The purpose of this was to ide
            
         </section> 
   <section class="picture">
-            <img src="images/lowfiwireframe.jpeg" class="piccontainer">
-            <p style="width:100%;text-align:center;" class="caption">Low-fidelity wireframe snippets.</i></p>
+            <img id="lowfiwireframe" alt="Low-fidelity wireframe snippet." src="images/lowfiwireframe.jpeg" class="piccontainer">
+            <p style="width:100%;text-align:center;" class="caption">Low-fidelity wireframe snippet.</i></p>
         </section>
 
              <section style="flex:100%;margin-top:-10px ">
@@ -695,7 +701,7 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
 
          <section style="flex:100%" class="picture" >
         <p>We also revalidated our product backlog with new features:</p><br>
-            <img style="max-width:600px;" src="images/backlog2.jpeg" class="piccontainer">
+            <img  id="backlog2" alt="Revalidated product backlog with new features added." style="max-width:600px;" src="images/backlog2.jpeg" class="piccontainer">
         <p style="text-align:center; width:100%;" class="caption">Revalidated product backlog with new features added.</p>   
        
         </section>
@@ -727,11 +733,11 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
            
         </section> 
         <section class="picture">
-            <img style="max-width:70%;" src="images/wireframereval.png" class="piccontainer">
+            <img  id="wireframereval" alt="Revalidated the wireframe."  style="max-width:70%;" src="images/wireframereval.png" class="piccontainer">
             <p style="width:100%;text-align:center;" class="caption">Revalidated the wireframe.</i></p>
         </section>
         <section class="picture">
-            <img style="width:100%;max-width:75%;" src="images/finalanalysis.png" class="piccontainer">
+            <img  id="finalanalysis" alt="Brief analysis of usability testing results." style="width:100%;max-width:75%;" src="images/finalanalysis.png" class="piccontainer">
             <p style="width:100%;text-align:center;" class="caption">Brief analysis of usability testing results.</i></p>
         </section>
 
@@ -747,7 +753,7 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
            
         </section> 
         <section class="picture">
-            <img style="width:50%;" src="images/irisscreens.png" class="piccontainer">
+            <img  id="irisscreens" alt="Screens for Home and User Profile settings." style="width:50%;" src="images/irisscreens.png" class="piccontainer">
             <p style="width:100%;text-align:center;" class="caption">Screens for Home and User Profile settings.</i></p>
         </section>
         
@@ -791,7 +797,89 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
 <div id="ovalbg"></div>
 
 
-  
+
+<script>
+
+var modal = document.getElementById("expandPic");
+
+
+
+var img = document.getElementById("backlog1");
+var img1 = document.getElementById("claire");
+var img2 = document.getElementById("dorothy");
+var img3 = document.getElementById("christina");
+var img4 = document.getElementById("lowfiwireframe");
+var img5 = document.getElementById("backlog2");
+var img6 = document.getElementById("wireframereval");
+var img7 = document.getElementById("finalanalysis");
+var img8 = document.getElementById("irisscreens");
+
+
+var expandImage = document.getElementById("angelpic");
+var expandcaption = document.getElementById("angelcaption");
+modal.onclick = function() { 
+  modal.style.display = "none";
+}
+
+img.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+
+img1.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img3.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img4.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img5.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+
+img6.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img7.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+img8.onclick = function(){
+  modal.style.display = "block";
+  expandImage.src = this.src;
+  expandcaption.innerHTML = this.alt;
+}
+
+
+</script>
+
 
 </body>
 </html>

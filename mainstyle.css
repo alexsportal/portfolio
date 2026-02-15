@@ -455,7 +455,16 @@ flex-direction: column;
 }
 }
 
-
+.largecaptionborder{
+    border-left: solid 15px #514059;
+    padding-left: 25px; width:88%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight:600;
+    font-family: header2;
+    color:#514059;
+    text-decoration:none;
+}
 
 
 
