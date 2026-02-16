@@ -343,7 +343,11 @@ filter:contrast(80%);
 
 }}
 
+@media screen and (max-width:600px){
+.navbar{
+   gap: 5px;
 
+}}
 
 @media screen and (max-width:800px) {
 #banner{ 
