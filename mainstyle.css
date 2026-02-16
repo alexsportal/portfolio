@@ -257,7 +257,7 @@ left:0;
 right:0;
 bottom:0;
 height:10px;
-width: 85%;
+width: 78%;
 min-width:100px;
 max-width:788px;
 font-size:medium;
@@ -266,7 +266,11 @@ z-index:2;
 border-top-left-radius: 10px ;
 border-top-right-radius: 10px ;
 font-weight: 400;
-
+  --line-w-inner: 2px ;
+	--line-w-outer: 4px ;
+	border: solid 3px transparent;
+	box-shadow: 0 0 0 var(--line-w-outer)#514059 , inset 0 0 0 var(--line-w-inner) #514059;
+    border-bottom: none;
 }
 
 @media screen and (max-width:450px) {
