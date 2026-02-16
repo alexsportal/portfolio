@@ -324,13 +324,13 @@ width:87%;
 .navbutton{
 width: auto;
 height:auto;
-margin-top:-20px;
+margin-top:-10px;
 transition: .3s;
 filter:contrast(80%);
 }
 
 .navbutton:hover{
-    margin-top:-8px;
+    padding-top: 5px;
     filter:contrast(100%);
 }
 
