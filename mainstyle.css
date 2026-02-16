@@ -22,6 +22,7 @@ left:0;
 right:0;
 pointer-events: none;
 margin: auto;
+
 content-visibility:auto;
 position: relative;
 width: auto;
@@ -145,11 +146,11 @@ transition: 1s;
 #banner{
     position:absolute;
     display: block;
-    width:40%;
+    width:auto;
     min-width:150px;
     left:0;
     right:0;
-    height:150px;
+    height:100px;
     top:30px;
     margin: auto;
     z-index:8;
@@ -169,6 +170,7 @@ transition: 1s;
     top:0;
     gap:10px;
     transition:1s;
+    justify-content: space-around;
 }
 
 
@@ -187,7 +189,6 @@ margin-top:auto;
 #navframe{ 
 
 z-index:10;
-top: -19px;
 left:0;
 right:0;
 margin-top:0px;
@@ -199,23 +200,47 @@ height: auto;
 width:100%;
 pointer-events: none;
 transition: 1s;
-
+top:-50px;
 
 }
 
-@media screen and (max-width:720px) {
+
+@media screen and (max-width:1600px) {
 #navframe{
-top:20px;
+top:-60px;
 
 
 }
 }
-@media screen and (max-width:720px) {
-#navbar{
-width:70%;
+@media screen and (max-width:1100px) {
+#navframe{
+top:-35px;
+
 
 }
 }
+@media screen and (max-width:788px) {
+#navframe{
+top:-25px;
+
+
+}
+}
+@media screen and (max-width:650px) {
+#navframe{
+top:-20px;
+
+
+}
+}
+@media screen and (max-width:500px) {
+#navframe{
+top:-15px;
+
+
+}
+}
+
 
 #footer{
 background-color:#715B74;
@@ -223,7 +248,6 @@ color:#ffffffec;
 position:relative;
 padding-top:25px;
 padding-bottom:30px;
-
 display: flex;
 margin-top: 25px;
 margin: auto;
@@ -231,7 +255,8 @@ left:0;
 right:0;
 bottom:0;
 height:10px;
-width: auto;
+width: 85%;
+min-width:100px;
 max-width:788px;
 font-size:medium;
 justify-content: space-between;
@@ -269,21 +294,14 @@ backdrop-filter: blur(.7px);
 @media screen and (max-width:1100px) {
 #ovalbg{
 box-sizing: border-box;
-width:80%;
+width:87%;
   
 }
 }
 
 
 
-@media screen and (max-width:743px) {
-#pagesection1, #pagesection2{
-gap:0;
-margin: -5px;
-justify-self: center;
-margin-left:5px;
-}
-}
+
 
 
 
@@ -299,26 +317,41 @@ filter:contrast(80%);
 }
 
 .navbutton:hover{
-    margin-top:-25px;
+    margin-top:-8px;
     filter:contrast(100%);
 }
 
 @media screen and (max-width:800px){
 .navbutton{
-    width:80%;
+    width:100px;
    margin-top: 5px;
+
 }}
+@media screen and (max-width:600px){
+.navbutton{
+    width:70px;
+   margin-top: -45px;
+
+}}
+
+
 
 @media screen and (max-width:800px) {
 #banner{ 
-top:-15px;
-
+top:5px;
+width:38%;
 }
 }
-
+@media screen and (max-width:720px) {
+#banner{ 
+top:0;
+width:38%;
+}
+}
 @media screen and (max-width:550px) {
 #banner{
-top:-25px;
+top:-13px;
+width:35%;
 
 }
 }
