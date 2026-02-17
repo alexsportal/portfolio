@@ -22,7 +22,6 @@ left:0;
 right:0;
 pointer-events: none;
 margin: auto;
-
 content-visibility:auto;
 position: relative;
 width: auto;
@@ -53,7 +52,7 @@ margin-top:20px;
 
 @media screen and (max-width:1100px) {
 .contentcard{
-width:70%;
+width:80%;
   
 }
 }
@@ -530,8 +529,6 @@ flex-direction: column;
     color:#514059;
     text-decoration:none;
 }
-
-
 
 
 

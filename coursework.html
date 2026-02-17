@@ -18,8 +18,7 @@
 
 .gallerypiccontainer {
 height: 170px;
-max-width: 180px;
-width: auto;
+width: 170px;
 background-color: #555;
 border-radius: 10px;
 margin: auto;
@@ -34,6 +33,7 @@ border:solid 3px #dfdae2;
     transition:.3s;
     opacity: 90%;
     filter: saturate(50%);
+     scroll-snap-align:center;
 }
 
 .gallery:hover{
@@ -54,6 +54,36 @@ flex:100%;
     pointer-events: none;
 }
 
+.galleryslides{
+    display:flex;
+    position:relative;
+    width:auto;
+    height:auto;
+    margin:0;
+    flex-wrap: wrap;
+    flex:100%;
+    scroll-snap-type: x mandatory;
+}
+
+
+@media screen and (max-width:740px) {
+.galleryslides{
+    display:flex;
+    max-width:170px;
+    height:auto;
+    margin:auto;
+    flex-direction:row;
+    background-color: #e5e0e8;
+    gap:13px;
+    padding:10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 10px;
+    left:0;
+    right:0;
+    flex-wrap: nowrap;
+}
+}
 </style>
 </head>
 <body>
@@ -146,7 +176,7 @@ flex:100%;
 <section >
     <div class="imgcontainer">
             <section style="display:flex;flex:100%;flex-direction:row;">
-            <div  onClick="plusSlides(-1)" id="left" style="border-top-left-radius: 5px;">
+            <div  onclick="plusSlides(-1)" id="left" style="border-top-left-radius: 5px;">
                 <svg class="prev" viewBox="0 0 30 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.00095 28.9894L24.6621 5M5.00095 29.0109L24.6621 53.0003" stroke="#F0ECF0" stroke-width="10" stroke-linecap="round"/>
                 </svg>
@@ -559,29 +589,30 @@ flex:100%;
     <container class="contentcard">
   
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%">User Experience</h1>
-<p style="margin-top:-10px;text-align: center;">These are the main UX projects that I've completed while attending college. For these projects, we were required to write process pages to demonstrate our work and research methodologies.</p>
-   
+<p style="margin-top:-10px;">These are the main UX projects that I've completed while attending college. For these projects, we were required to write process pages to demonstrate our work and research methodologies.</p>
+    
+        <div class="galleryslides">
       <section class="gallery">
              <a href="processpageFARE.html" style="text-decoration: none; color:black"> <div>
-           <img style="max-width:170px; width:60%;" src="images/faremobile.png" class="piccontainer"/>
+           <img style="max-width:170px;" src="images/faremobile.png" class="piccontainer"/>
             <p ><b class="links">FARE</b> - 2022</p>
             </div></a>
         </section>
             
        <section class="gallery">
             <a href="processpageIRIS.html" style="text-decoration: none;color:black;"> <div>
-             <img style="max-width:170px; width:60%;" src="images/irismobile.png" class="piccontainer"/>
+             <img style="max-width:170px;" src="images/irismobile.png" class="piccontainer"/>
             <p ><b class="links">IRIS</b> - 2021</p>
             </div></a>
         </section>
             
-         <section class="gallery">
+         <section class="gallery" style="margin-right:8px;">
            <a href="processpage8TIV.html" style="text-decoration: none;color:black;"> <div>
-            <img style="max-width:132px; width:56%" src="images/8tivmobile.png" class="piccontainer"/>
-            <p ><b class="links">8TIV</b> - 2020</p>
+            <img style="max-width:153px;margin-top:5px;" src="images/8tivmobile.png" class="piccontainer"/>
+            <p style="margin-top:25px;"><b class="links">8TIV</b> - 2020</p>
             </div></a>
         </section>
-            
+            </div>
     
 
 
@@ -595,8 +626,10 @@ flex:100%;
 
     <container class="contentcard">
   
-    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%">User Interface & Graphic Design</h1>
-    <p style="margin-top:-10px;text-align: center;">I also have some examples of the UI projects and graphic design work I've done in and outside of school. Process pages were not required for these projects.</p>
+    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%">Interface & Graphic Design</h1>
+    <p style="margin-top:-10px;">I also have some examples of the UI projects and graphic design work I've done in and outside of school. Process pages were not required for these projects.</p>
+    
+    <div class="galleryslides">
     <section class="gallery">
             
            <div class="openslides" onclick="openBox();currentSlide(1)">
@@ -628,7 +661,7 @@ flex:100%;
         </section>
             
     
-    <section class="gallery">
+        <section class="gallery">
             
            <div onclick="openBox();currentSlide(4)">
             <div id="painting1" class="gallerypiccontainer" style="background-image: url('documents/Artboard\ 1.png');background-size: contain;background-position:center;background-repeat: no-repeat;background-color:#b1acaf"></div>
@@ -657,7 +690,7 @@ flex:100%;
             </div>
 
         </section>
-    
+    </div>
 
     </container>
 
