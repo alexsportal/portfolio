@@ -172,8 +172,10 @@ transition: 1s;
     top:0;
     gap:10px;
     transition:1s;
-    justify-content: space-around;
+  
 }
+
+
 
 .openpage{
     pointer-events: none;
@@ -346,8 +348,9 @@ filter:contrast(80%);
 }}
 
 @media screen and (max-width:600px){
-.navbar{
+#navbar{
    gap: 5px;
+
 
 }}
 
