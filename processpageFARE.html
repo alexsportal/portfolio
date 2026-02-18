@@ -93,6 +93,29 @@ display: block;
 #coursework{
     pointer-events:none;
 }
+
+#pagenav{
+    position:fixed;
+    z-index:11;
+    width:auto;
+    height:50%;
+    display:flex;
+    flex-direction: column;
+  
+    left:-15px;
+    top:45%;
+}
+.pagenavbuttons{
+    position:relative;
+    width:25px;
+    height:25px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius: 100%;
+    background-color: aqua;
+    display:block;
+}
+
 </style>
 </head>
 <body>
@@ -117,6 +140,9 @@ display: block;
 <p id="angelcaption" class="expandedcaption">caption</p>
 <p class="expandedcaption" style="font-size:smaller;">Click anywhere to close.</p>
 </div>
+
+
+
 
 <div id="contactmeoverlay">
 
@@ -800,7 +826,14 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
 </footer>
 
 
-<div id="ovalbg"></div>
+<div id="ovalbg"><div id="pagenav">
+    <div class="pagenavbuttons">1</div>
+    <div class="pagenavbuttons">2</div>
+    <div class="pagenavbuttons">3</div>
+    <div class="pagenavbuttons">4</div>
+    <div class="pagenavbuttons">5</div>
+    <div class="pagenavbuttons">6</div>
+</div></div>
 
 
 <script>
