@@ -5,12 +5,43 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
+
+
 function sectionOne() {
   const element = document.getElementById("overview");
   element.scrollIntoView();
+    
+}
+function sectionTwo() {
+  const element = document.getElementById("research");
+  element.scrollIntoView();
+}
+function sectionThree() {
+  const element = document.getElementById("persona");
+  element.scrollIntoView();
+}
+function sectionFour() {
+  const element = document.getElementById("requirements");
+  element.scrollIntoView();
+}
+function sectionFive() {
+  const element = document.getElementById("framework");
+  element.scrollIntoView();
+}
+function sectionSix() {
+  const element = document.getElementById("refinements");
+  element.scrollIntoView();
 }
 </script>
+<script>
+        function openForm() {
+        document.getElementById("contactmeoverlay").style.display = "block";
+        }
 
+        function closeForm() {
+        document.getElementById("contactmeoverlay").style.display = "none";
+        }
+</script>
 <style>
 
 
@@ -72,12 +103,7 @@ flex:90%;
   
 }
 }
-@media screen and (max-width:600px) {
-.picture{
-pointer-events:none;
-  
-}
-}
+
 
 
 #headerfare{
@@ -103,41 +129,44 @@ display: block;
 #pagenav{
     position:fixed;
     z-index:11;
-    width:auto;
+    width:10%;
     height:50%;
     display:flex;
     flex-direction: column;
-  
-    left:15px;
-    top:45%;
+    margin-left:9px;
+    left:-10px;
+    top:50%;
 }
 .pagenavbuttons{
     position:relative;
-    width:25px;
-    height:25px;
-    margin-top:20px;
-    margin-bottom:20px;
-    border-radius: 100%;
-    background-color: aqua;
+    width:100%;
+    height:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:right;
+    background-color: rgba(202, 194, 150, 0.808);
     display:block;
+    border-bottom-right-radius: 40px;
+     border-top-right-radius: 40px;
+     padding:5px;
+    padding-right:10px;
+    transition: .3s;
+    color:white;
+    font-family: header2;
+    align-content: center;
 }
-
+.pagenavbuttons:hover{
+    padding-left:10px;
+    cursor:pointer;
+     background-color: rgb(202, 194, 150);
+}
 </style>
 </head>
 <body>
 
     <link rel="stylesheet" href="mainstyle.css"/>
     
-        <script>
-        function openForm() {
-        document.getElementById("contactmeoverlay").style.display = "block";
-        }
-
-        function closeForm() {
-        document.getElementById("contactmeoverlay").style.display = "none";
-        }
-
-    </script>
+        
 
 
 <div id="expandPic">
@@ -149,12 +178,12 @@ display: block;
 
 
 <div id="pagenav">
-    <div onclick="sectionOne()" class="pagenavbuttons">1</div>
-    <div class="pagenavbuttons">2</div>
-    <div class="pagenavbuttons">3</div>
-    <div class="pagenavbuttons">4</div>
-    <div class="pagenavbuttons">5</div>
-    <div class="pagenavbuttons">6</div>
+    <div id="one" onclick="sectionOne()" class="pagenavbuttons">1</div>
+    <div onclick="sectionTwo()" class="pagenavbuttons">2</div>
+    <div onclick="sectionThree()" class="pagenavbuttons">3</div>
+    <div onclick="sectionFour()" class="pagenavbuttons">4</div>
+    <div onclick="sectionFive()" class="pagenavbuttons">5</div>
+    <div onclick="sectionSix()" class="pagenavbuttons">6</div>
 </div>
 
 <div id="contactmeoverlay">
@@ -470,7 +499,7 @@ display: block;
 <div id="overview"  class="contentframe">
 
 <container  class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Overview</h1>
+  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">1. Overview</h1>
  
    
        
@@ -540,9 +569,9 @@ Users who prefer to dine alone can view recommendations on the discover page. Re
 
 
 
-<div class="contentframe">
-<container id="research" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Research</h1>
+<div id="research" class="contentframe">
+<container  class="contentcard">
+  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">2. Research</h1>
  
    
        
@@ -678,9 +707,9 @@ After each interview, our team that was available for the interview regrouped an
 
 
 
-<div class="contentframe">
-<container id="modeling" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Modeling The Persona</h1>
+<div id="persona" class="contentframe">
+<container  class="contentcard">
+  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">3. The Persona</h1>
  <p>
 Personas should help us make sure that we’re accommodating our users’ goals and needs during the Frameworks Phase. ‍Based on research results and affinity mapping, we were able to create a primary and secondary persona.
  </p>
@@ -706,9 +735,9 @@ Personas should help us make sure that we’re accommodating our users’ goals 
 </div>
 
 
-<div class="contentframe">
-<container id="modeling" class="contentcard">
-    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Requirements</h1>
+<div id="requirements" class="contentframe">
+<container  class="contentcard">
+    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">4. Requirements</h1>
     <p>
 A Requirement is what's needed to exist on the app so that personas can achieve their goals. It connects the gap between research and design by using personas to create stories that express user satisfaction. We do this by putting the Persona into a Context Scenario, which is essentially a story that explains how a product fits into the Persona’s life and how it helps them achieve their goals.
     <br><br>
@@ -734,9 +763,9 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
 </div>
 
 
-<div class="contentframe">
-<container id="modeling" class="contentcard">
-    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Framework</h1>
+<div id="framework" class="contentframe">
+<container  class="contentcard">
+    <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">5. Framework</h1>
     <p>
 A Requirement is what's needed to exist on the app so that personas can achieve their goals. It connects the gap between research and design by using personas to create stories that express user satisfaction. We do this by putting the Persona into a Context Scenario, which is essentially a story that explains how a product fits into the Persona’s life and how it helps them achieve their goals.
     <br><br>
@@ -773,9 +802,9 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
 
 
 
-<div class="contentframe">
-<container id="requirements" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Refinements</h1>
+<div  id="refinements" class="contentframe">
+<container class="contentcard">
+  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">6. Refinements</h1>
  
    <p>
         After finishing our low-fidelity prototype, we began usability testing. Using Google Forms, we included a set of 6 tasks for navigating the prototype, and 19 (primarily) open-ended questions. We recruited four participants of the same demographic.

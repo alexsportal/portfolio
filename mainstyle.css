@@ -9,7 +9,7 @@ background-size:contain;
 transition: .3s;
 background-attachment: fixed;
 overflow: auto;
-
+scroll-snap-type: y mandatory;
 }
 
 .contentframe{
@@ -30,6 +30,7 @@ min-width:200px;
 max-width:788px;
 pointer-events: all;
 overflow: auto;
+transition:.3s;
 
 }
 
@@ -48,7 +49,7 @@ width:auto;
 height:auto;
 margin:auto;
 margin-top:20px;
-
+transition:.3s;scroll-snap-align: top;
 }
 
 @media screen and (max-width:1100px) {
@@ -109,7 +110,6 @@ border-radius: 10px;
 
 #navcontainer{
 width:auto;
-
 height:283px;
 display:block;
 top:0;
@@ -123,14 +123,10 @@ z-index:5;
 
 #navbar{
 width:auto;
-
-
 height:200px;
 display:flex;
-
 gap: 10px;
 position:relative;
-
 left:0;
 right:0;
 margin-left:auto;
@@ -138,7 +134,6 @@ margin-right:auto;
 justify-self: center;
 top:0;
 transition: 1s;
-
 }
 
 
@@ -936,8 +931,9 @@ input, textarea{
     box-shadow: 0px 4px 10px #1a171c ;
     display:block;
     position:relative;
-       height: 665px;
+       height: auto;
        width:auto;
+       max-width: 700px;;
     aspect-ratio: auto;
     margin-top:50px;
     transition:.3s;
@@ -945,7 +941,7 @@ input, textarea{
 }
 @media screen and (max-width:700px) {
 .expandedimage{
-    height:370px;
+    height:270px;
   
 }
 }
