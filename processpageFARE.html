@@ -4,6 +4,12 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+function sectionOne() {
+  const element = document.getElementById("overview");
+  element.scrollIntoView();
+}
+</script>
 
 <style>
 
@@ -102,7 +108,7 @@ display: block;
     display:flex;
     flex-direction: column;
   
-    left:-15px;
+    left:15px;
     top:45%;
 }
 .pagenavbuttons{
@@ -142,7 +148,14 @@ display: block;
 </div>
 
 
-
+<div id="pagenav">
+    <div onclick="sectionOne()" class="pagenavbuttons">1</div>
+    <div class="pagenavbuttons">2</div>
+    <div class="pagenavbuttons">3</div>
+    <div class="pagenavbuttons">4</div>
+    <div class="pagenavbuttons">5</div>
+    <div class="pagenavbuttons">6</div>
+</div>
 
 <div id="contactmeoverlay">
 
@@ -454,9 +467,9 @@ display: block;
 </div>
 
 
-<div class="contentframe">
+<div id="overview"  class="contentframe">
 
-    <container class="contentcard">
+<container  class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Overview</h1>
  
    
@@ -741,17 +754,17 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
     
     </section>
 
-
+<!--
    <h3 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Low-Fidelity Prototype</h3>
     <p>
-        Next, we moved to Figma to begin building the prototype. Since this is a low-fidelity prototype, a lot of content (information, styles, colors, branding) is not included. For example, most screens will have filler text or image placeholders. The low fidelity prototype is still accessible in Figma.
+        Next, we moved to Figma to begin building the prototype. Since this is a low-fidelity prototype, a lot of content (information, styles, colors, branding) is not included. For example, most screens will have filler text or image placeholders.
     </p>
 
     <section  style="align-self: center; ">
            <iframe style="border: 0px solid rgba(0, 0, 0, 0);" width="300" height="510" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtQWtjHBLskj2JWcBmYwzbr%2FRestaurantApp_Lowfi%3Fnode-id%3D10%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D10%253A2" allowfullscreen></iframe>
             <p style="text-align:center; width:100%;" class="caption">Embedded low fidelity prototype from Figma.</p>
     </section> 
-
+-->
 
 </container>
 </div>
@@ -826,14 +839,8 @@ Using the Context Scenario (written by Sabina), we made a list of Requirements t
 </footer>
 
 
-<div id="ovalbg"><div id="pagenav">
-    <div class="pagenavbuttons">1</div>
-    <div class="pagenavbuttons">2</div>
-    <div class="pagenavbuttons">3</div>
-    <div class="pagenavbuttons">4</div>
-    <div class="pagenavbuttons">5</div>
-    <div class="pagenavbuttons">6</div>
-</div></div>
+<div id="ovalbg"></div>
+
 
 
 <script>
@@ -857,6 +864,9 @@ var img5 = document.getElementById("sarah");
 
 var expandImage = document.getElementById("angelpic");
 var expandcaption = document.getElementById("angelcaption");
+
+
+
 img.onclick = function(){
   modal.style.display = "block";
   expandImage.src = this.src;
