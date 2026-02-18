@@ -5,6 +5,18 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script>
+        function openForm() {
+        document.getElementById("contactmeoverlay").style.display = "block";
+        }
+
+        function closeForm() {
+        document.getElementById("contactmeoverlay").style.display = "none";
+        }
+
+</script>
+
+<script src="jumptosection.js"></script>
 <style>
 
 
@@ -100,19 +112,18 @@ display: block;
 </style>
 </head>
 <body>
-    <link rel="stylesheet" href="mainstyle.css"/>
+<link rel="stylesheet" href="mainstyle.css"/>
+<link rel="stylesheet" href="sectionbuttons.css"/>
+   
+<div id="pagenav">
+    <div onclick="sectionOne()" class="pagenavbuttons">1</div>
+    <div onclick="sectionTwo()" class="pagenavbuttons">2</div>
+    <div onclick="sectionThree()" class="pagenavbuttons">3</div>
+    <div onclick="sectionFour()" class="pagenavbuttons">4</div>
+    <div onclick="sectionFive()" class="pagenavbuttons">5</div>
 
+</div>
 
-        <script>
-        function openForm() {
-        document.getElementById("contactmeoverlay").style.display = "block";
-        }
-
-        function closeForm() {
-        document.getElementById("contactmeoverlay").style.display = "none";
-        }
-
-        </script>
 
 <div id="contactmeoverlay">
 
@@ -359,9 +370,7 @@ display: block;
 
 
         </div></a>
-        </div>
-
-        <div id="pagesection2" >
+      
         <a href="wip.html"><div id="page">
 
         <svg width="146" height="274" viewBox="0 0 146 274" fill="none" class="navbutton" xmlns="http://www.w3.org/2000/svg">
@@ -439,7 +448,7 @@ display: block;
 
 <div class="contentframe">
 
-    <container class="contentcard">
+    <container id="overview" class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Summary</h1>
  
    
@@ -472,7 +481,7 @@ display: block;
 
 <div class="contentframe">
 
-    <container class="contentcard">
+    <container id="research" class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Introduction</h1>
  
    
@@ -521,7 +530,7 @@ display: block;
 
 
 <div class="contentframe">
-<container id="research" class="contentcard">
+<container id="persona" class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Sprint 1</h1>
  
    
@@ -670,7 +679,7 @@ We believe our three points were validated and will be beneficial to users. Base
 
 
 <div class="contentframe">
-<container id="research" class="contentcard">
+<container id="requirements" class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Sprint 2</h1>
  
    
@@ -765,7 +774,7 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
 </div>
 
 <div class="contentframe">
-<container id="refinements" class="contentcard">
+<container id="framework" class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px;flex:100%;">Conclusion</h1>
  
    
@@ -774,7 +783,7 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
         <section style="flex:60%;margin-top:-10px ">
          
           <p>
-            Our goal with Iris is to help users manage their menstrual cycle while understanding how it can affect their skin simultaneously. 
+            Our goal with Iris was to help users manage their menstrual cycle while understanding how it can affect their skin simultaneously. 
 
             Using feedback from various potential users, we developed a high-fidelity prototype after wireframing and conducting research through interviews and questionnaires.
         </p>
@@ -799,7 +808,7 @@ Sprint 2 is essentially similar to Sprint 1, with more focus on revalidating our
 <div id="ovalbg"></div>
 
 
-
+<script src="activebutton.js"></script>
 <script>
 
 var modal = document.getElementById("expandPic");

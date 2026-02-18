@@ -4,7 +4,8 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="activebutton.js"></script>
+<script src="jumptosection.js"></script>
 <style>
 
 
@@ -99,9 +100,10 @@ display: block;
 </style>
 </head>
 <body>
-   <link rel="stylesheet" href="mainstyle.css"/>
-
-        <script>
+<link rel="stylesheet" href="mainstyle.css"/>
+<link rel="stylesheet" href="sectionbuttons.css"/>
+   
+<script>
         function openForm() {
         document.getElementById("contactmeoverlay").style.display = "block";
         }
@@ -110,7 +112,7 @@ display: block;
         document.getElementById("contactmeoverlay").style.display = "none";
         }
 
-        </script>
+</script>
 
 <div id="contactmeoverlay">
 
@@ -169,12 +171,19 @@ display: block;
 
 
 </div>
-
 <div id="expandPic">
 
 <img id="angelpic" src="images/angel2.JPEG" class="expandedimage" />
 <p id="angelcaption" class="expandedcaption">caption</p>
 <p class="expandedcaption" style="font-size:smaller;">Click anywhere to close.</p>
+</div>
+<div id="pagenav">
+    <div onclick="sectionOne()" class="pagenavbuttons">1</div>
+    <div onclick="sectionTwo()" class="pagenavbuttons">2</div>
+    <div onclick="sectionThree()" class="pagenavbuttons">3</div>
+    <div onclick="sectionFour()" class="pagenavbuttons">4</div>
+    <div onclick="sectionFive()" class="pagenavbuttons">5</div>
+    <div onclick="sectionSix()" class="pagenavbuttons">6</div>
 </div>
 
 <a href="index.html"><svg id="banner" width="436" height="156" viewBox="0 0 436 156" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -334,9 +343,8 @@ display: block;
 
 
         </div></a>
-        </div>
+   
 
-        <div id="pagesection2" >
         <a href="wip.html"><div id="page">
 
 <svg width="146" height="274" viewBox="0 0 146 274" fill="none" class="navbutton" xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +395,7 @@ display: block;
 
 <div class="contentframe">
 
-    <container class="contentcard">
+    <container id="overview" class="contentcard">
   <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Overview</h1>
         <section style="flex:60%;margin-top:-10px ">
         <p>
@@ -600,8 +608,8 @@ After each interview, our team that was available for the interview regrouped an
 
 
 <div class="contentframe">
-<container id="modeling" class="contentcard">
-  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">Modeling The Persona</h1>
+<container id="persona" class="contentcard">
+  <h1 style="text-align:center; width:auto; max-width: 720px ;flex:100%;">The Persona</h1>
         <section style="flex:100%;margin-top:-10px ">
             <p>
             Having a <b>persona</b> to refer to makes sure that we are accommodating our users’ goals and needs during the Frameworks Phase. ‍Based on research results and affinity mapping, we were able to create a primary persona but no secondary or other types of personas for this stage. My team members used the results to create our primary persona for the app, Davina Shepherd.
@@ -695,6 +703,7 @@ After each interview, our team that was available for the interview regrouped an
 
       <div id="ovalbg"></div>
 
+<script src="activebutton.js"></script>
 <script>
 
 var modal = document.getElementById("expandPic");
